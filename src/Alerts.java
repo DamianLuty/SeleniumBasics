@@ -12,10 +12,14 @@ public class Alerts {
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
+		//inputing phrase to field
 		driver.findElement(By.cssSelector("input[class='inputs']")).sendKeys("Damian");
-		//driver.findElement(By.cssSelector("input[id='alertbtn']")).click();
-		//System.out.println(driver.switchTo().alert().getText());
-		//driver.switchTo().alert().accept();
+		//clicking the "alarm" button to trigger an alert window
+		driver.findElement(By.cssSelector("input[id='alertbtn']")).click();
+		//gathering text from alarm window
+		System.out.println(driver.switchTo().alert().getText());
+		//accepting alarm - clicking "ok" button
+		driver.switchTo().alert().accept();
 		driver.findElement(By.cssSelector("input[id='confirmbtn']")).click();
 		System.out.println(driver.switchTo().alert().getText());
 		Thread.sleep(2000);
