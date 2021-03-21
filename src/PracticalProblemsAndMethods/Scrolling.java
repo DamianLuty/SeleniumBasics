@@ -1,6 +1,12 @@
+package PracticalProblemsAndMethods;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Scrolling {
 
@@ -21,7 +27,18 @@ public class Scrolling {
 		//scrolling the table to the bottom of the table
 		js.executeScript("document.querySelector('.tableFixHead').scrollTop=300");
 		
+		List<WebElement> amounts = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
+		int sum = 0;
 		
+		for(int i = 0; i < amounts.size(); i++) {
+			
+			sum += Integer.parseInt(amounts.get(i).getText());;
+		}
+		System.out.println(sum);
+		driver.findElement(By.cssSelector(".totalAmount")).getText();
+		int webValue = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
+		
+		Assert.assertEquals(sum, webValue);
 	}
 
 }
