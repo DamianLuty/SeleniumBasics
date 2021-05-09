@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-15T10:49:14 CEST" name="Default suite" finished-at="2021-04-15T10:49:14 CEST" duration-ms="31">
+    <groups>
+    </groups>
+    <test started-at="2021-04-15T10:49:14 CEST" name="Default test" finished-at="2021-04-15T10:49:14 CEST" duration-ms="31">
+      <class name="JavaStreams.JavaStreamsExamples">
+        <test-method signature="streamCollect()[pri:0, instance:JavaStreams.JavaStreamsExamples@7c83dc97]" started-at="2021-04-15T10:49:14 CEST" name="streamCollect" finished-at="2021-04-15T10:49:14 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamCollect -->
+        <test-method signature="streamMap()[pri:0, instance:JavaStreams.JavaStreamsExamples@7c83dc97]" started-at="2021-04-15T10:49:14 CEST" name="streamMap" finished-at="2021-04-15T10:49:14 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamMap -->
+      </class> <!-- JavaStreams.JavaStreamsExamples -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
